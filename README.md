@@ -81,17 +81,17 @@ npm start
 
 ### User Authentication
 
-- **POST /register**
+- **POST /api/auth/register**
   - Registers a new user.
   - **Request body**: `{ "email": "user@example.com", "password": "yourpassword" }`
 
-- **POST /login**
+- **POST /api/auth/login**
   - Logs in a user and returns a JWT.
   - **Request body**: `{ "email": "user@example.com", "password": "yourpassword" }`
 
 ### Protected Routes
 
-- **GET /me**
+- **GET /api/auth/me**
   - Requires a valid JWT in the `Authorization` header.
 
 ## Environment Variables
